@@ -23,7 +23,8 @@ This Python script collects follower counts for multiple LinkedIn company pages 
 
 1. **Update Login Credentials**: replace the `login_lkd` and `password_lkd` variables with your LinkedIn credentials.
 
-2. **Define Company IDs**: update the `company_ids` dictionary with the LinkedIn company IDs you want to track. You can find a company’s ID by using the `api.get_company()` method and extracting the ID from the returned URL.
+2. **Define Company IDs**: update the `company_ids` dictionary with the LinkedIn company IDs you want to track. You can find a company’s ID by using the `api.get_company()` method and extracting the ID from the returned LinkedIn URL (e.g. https://www.linkedin.com/vsearch/p?f_CC=2029 -> id = 2029).
+   
 
 
 The script will create or append to an Excel file named `linkedin_followers_data.xlsx`.
